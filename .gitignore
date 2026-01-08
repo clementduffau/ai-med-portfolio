@@ -132,3 +132,9 @@ logs/
 # **/results/**/*.jpeg
 # **/results/**/*.gif
 
+!config/
+!**/config/
+!config/**/*.yml
+!config/**/*.yaml
+!**/config/**/*.yml
+!**/config/**/*.yaml

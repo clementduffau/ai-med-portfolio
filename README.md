@@ -7,7 +7,7 @@ Each project is **self-contained**, well-documented, and reproducible.
 ---
 
 ## Repository Structure
-
+```
 ai-med-portfolio/
 │
 ├── projects/
@@ -25,10 +25,11 @@ ai-med-portfolio/
 │ │ └── llm-project/
 │ 
 └── README.md ← You are here
-
+```
 ## Project Organization (Standard)
 
 Each project follows the **same structure** for clarity and reproducibility:
+```
 project-name/
 ├── README.md
 │ └── Project overview: objective, medical context, dataset, methods, and results
@@ -46,12 +47,11 @@ project-name/
 │
 └── pyproject.toml
 └── Project dependencies and configuration
-
+```
 
 ### Notes
 - Training code may live in **`src/` or `notebooks/`**, depending on project complexity
 - Not all projects include a `results/` folder (only when outputs are meaningful)
-- This structure ensures **readability, reproducibility, and scalability**
 
 ---
 
