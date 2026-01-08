@@ -1,1 +1,134 @@
 .DS_Store
+# -----------------------------
+# OS / Editors
+# -----------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+dist/
+build/
+*.egg-info/
+pip-wheel-metadata/
+*.log
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+
+# -----------------------------
+# Data (keep scripts, ignore heavy files)
+# -----------------------------
+data/
+**/data/
+datasets/
+**/datasets/
+raw/
+**/raw/
+processed/
+**/processed/
+interim/
+**/interim/
+
+# Common large formats
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.pkl
+*.pickle
+*.joblib
+
+# Medical imaging / genomics heavy files
+*.nii
+*.nii.gz
+*.dcm
+*.mha
+*.mhd
+*.tif
+*.tiff
+*.svs
+*.bam
+*.bai
+*.fasta
+*.fa
+*.fastq
+*.fq
+*.bed
+
+# -----------------------------
+# Model artifacts / checkpoints
+# -----------------------------
+checkpoints/
+**/checkpoints/
+weights/
+**/weights/
+models/
+**/models/
+runs/
+**/runs/
+outputs/
+**/outputs/
+
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+
+# -----------------------------
+# Experiment tracking / logs
+# -----------------------------
+wandb/
+**/wandb/
+mlruns/
+**/mlruns/      # MLflow
+tensorboard/
+**/tensorboard/
+tb_logs/
+**/tb_logs/
+lightning_logs/
+**/lightning_logs/
+
+logs/
+**/logs/
+*.out
+
+# -----------------------------
+# Reports exports (optional)
+# Keep README + small figures, ignore generated heavy stuff
+# -----------------------------
+**/reports/*.html
+**/reports/*.pdf
+**/reports/*.zip
+# **/results/**/*.png
+# **/results/**/*.jpg
+# **/results/**/*.jpeg
+# **/results/**/*.gif
+
