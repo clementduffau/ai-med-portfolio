@@ -1,0 +1,18 @@
+model_name : TinyLlama/TinyLlama-1.1B-Chat-v1.0
+lr: 1e-4
+max_epochs : 10
+adam_beta1 : 0.9
+adam_beta2 : 0.999
+weight_decay : 1e-2
+warmup_ratio : 0.05
+
+lora:
+  r : 16
+  lora_alpha : 32
+  lora_dropout : 0.05
+  target_modules:
+    - q_proj
+    - v_proj
+    - k_proj
+    - o_proj
+

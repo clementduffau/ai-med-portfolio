@@ -1,13 +1,137 @@
-# AI Medical Portfolio
+# AI Engineer (Medical) — ML / DL
 
-Ingénieur IA (médical) — projets ML/DL/NLP/LLM/diffusion, orientés production et évaluation.
+This repository is my **AI & Medical Machine Learning portfolio**, showcasing end-to-end projects in **machine learning, deep learning**, with a strong focus on **production-ready pipelines**, **medical relevance**, and **clear experimental reporting**.
+
+Each project is **self-contained**, well-documented, and reproducible.
+
+---
+
+## Repository Structure
+
+ai-med-portfolio/
+│
+├── projects/
+│ ├── ml/
+│ │ ├── diabetes-regression/
+│ │ ├── heart-failure-classification/
+│ │ └── breast-cancer-svm/
+│ │
+│ ├── dl/
+│ │ ├── llc-disease-mlp/
+│ │ ├── epigenetic-mark-cnn/
+│ │ ├── medical-image-classification/
+│ │ ├── medical-image-segmentation/
+│ │ ├──medical-notes-multilabel-classification/
+│ │ └── llm-project/
+│ 
+└── README.md ← You are here
+
+## Project Organization (Standard)
+
+Each project follows the **same structure** for clarity and reproducibility:
+project-name/
+├── README.md
+│ └── Project overview: objective, medical context, dataset, methods, and results
+
+├── src/
+│ └── Source code: model definitions, training loops, evaluation, utilities
+│
+├── notebooks/
+│ └── Experiments and analysis notebooks
+│ (model testing, inference, or training when not implemented in src/)
+│
+├── results/
+│ └── Outputs: metrics, plots, figures, qualitative predictions
+│ (present only when relevant)
+│
+└── pyproject.toml
+└── Project dependencies and configuration
 
 
-## All projects
-- ML classique : `projects/classical-ml.md`
-- Deep learning : `projects/deep-learning.md`
-- NLP & LLM : `projects/nlp-llm.md`
-- Diffusion & multimodal : `projects/diffusion-multimodal.md`
+### Notes
+- Training code may live in **`src/` or `notebooks/`**, depending on project complexity
+- Not all projects include a `results/` folder (only when outputs are meaningful)
+- This structure ensures **readability, reproducibility, and scalability**
+
+---
+
+## Projects Overview
+
+### Machine Learning (`projects/ml/`)
+
+**3 projects — focus on fundamentals, interpretability, and baselines**
+
+- **Diabetes Regression**
+  - Linear & regularized regression models
+  - Feature scaling, evaluation with RMSE / R²
+
+- **Heart Failure Classification**
+  - Decision Trees, Random Forest, XGBoost
+  - Feature importance & clinical interpretability
+
+- **Breast Cancer SVM**
+  - Support Vector Machines (linear & kernel)
+  - Margin analysis and model comparison
+
+---
+
+### Deep Learning (`projects/dl/`)
+
+**6 projects — structured data, genomics, medical imaging, NLP, LLM**
+
+- **LLC Disease MLP**
+  - Classical MLP for medical tabular classification
+  - Regularization & optimization strategies
+
+- **Epigenetic Mark CNN**
+  - 1D CNN for genomic sequence modeling
+  - Multiclass prediction on epigenetic signals
+
+- **Medical Image Classification**
+  - CNNs for medical imaging (X-ray / scans)
+  - Data augmentation & transfer learning
+
+- **Medical Image Segmentation**
+  - U-Net-based architectures
+  - Multi-label segmentation (Dice, IoU metrics)
+
+- **Medical Notes Multi-Label Classification**
+  - Transformer-based model (ClinicalBERT)
+  - Multi-label disease coding from clinical notes
+
+- **LLM Project (Medical QA & Summarization)**
+  - Fine-tuning **TinyLLaMA** with LoRA
+  - Medical question answering
+  - Medical paragraph summarization
+  - Quantitative (loss, perplexity) & qualitative evaluation
+
+---
+
+## Technical Stack
+
+- **Languages**: Python
+- **ML/DL**: PyTorch, PyTorch Lightning, scikit-learn
+- **NLP / LLM**: Hugging Face Transformers, LoRA, PEFT
+- **Medical Imaging**: segmentation-models-pytorch
+- **Genomics**: Custom 1D CNNs
+- **Experiment Tracking**: Weights & Biases
+- **Evaluation**: Dice, IoU, ROC-AUC, F1, RMSE, Perplexity
+
+---
+
+## Philosophy
+
+- End-to-end pipelines (data → model → evaluation)
+- Medical relevance & correctness
+- Reproducibility and clean code
+- Clear documentation for **technical and non-technical reviewers**
+- Focus on **real-world deployment constraints**
+
+---
 
 ## Contact
-- (LinkedIn / email)
+
+- **LinkedIn**: *https://www.linkedin.com/in/cl%C3%A9ment-duffau-7aa983238/*
+- **Email**: *duffauclem@gmail.com*
+
+Feel free to explore each project — feedback and discussions are welcome.

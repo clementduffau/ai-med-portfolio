@@ -1,0 +1,8 @@
+defaults:
+  - data: data_default
+  - model : model_default
+  - trainer: trainer_default
+  - wandb: wandb_default
+  - _self_
+
+seed: 42

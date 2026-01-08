@@ -1,0 +1,24 @@
+# env
+.venv/
+
+# data
+data/
+datasets/
+*.zip
+*.tar
+*.gz
+*.csv
+
+# artifacts
+artifacts/
+checkpoints/
+*.pt
+*.pth
+*.onnx
+
+# notebooks
+.ipynb_checkpoints/
+
+# python
+__pycache__/
+*.pyc
