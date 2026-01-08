@@ -1,0 +1,17 @@
+
+model_name : emilyalsentzer/Bio_ClinicalBERT
+text_col : note
+label_col : labels
+
+max_length: 512
+stride : 256
+
+
+batch_size_train: 64
+batch_size_val : 64
+num_workers: 2
+
+pin_memory: true
+persistent_workers: true
+
+data_dir : /home/clement/mnt/ssd_nvme/ai-med-portfolio/projects/dl/medical-notes-multilabel-classification/src/data

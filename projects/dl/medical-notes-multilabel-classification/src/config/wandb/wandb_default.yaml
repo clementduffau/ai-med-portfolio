@@ -1,0 +1,4 @@
+use: true
+project: nlp_multilabel_classification
+log_model: false
+mode: online  #online

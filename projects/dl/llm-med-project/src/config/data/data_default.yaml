@@ -1,0 +1,16 @@
+
+model_name : TinyLlama/TinyLlama-1.1B-Chat-v1.0
+
+max_length: 512
+
+
+batch_size_train: 8
+batch_size_val : 8
+num_workers: 2
+
+pin_memory: true
+persistent_workers: true
+
+train_data_dir : /home/clement/mnt/ssd_nvme/ai-med-portfolio/projects/dl/llm-med-project/src/data/train.jsonl
+val_data_dir : /home/clement/mnt/ssd_nvme/ai-med-portfolio/projects/dl/llm-med-project/src/data/val.jsonl
+test_data_dir : /home/clement/mnt/ssd_nvme/ai-med-portfolio/projects/dl/llm-med-project/src/data/test.jsonl
