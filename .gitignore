@@ -138,3 +138,18 @@ logs/
 !config/**/*.yaml
 !**/config/**/*.yml
 !**/config/**/*.yaml
+!**/config/data/
+!**/config/data/**
+
+!**/config/wandb/
+!**/config/wandb/**
+# --- Keep configs even if located under src/ ---
+!**/src/config/
+!**/src/config/**
+
+# In case config subfolders match ignored names
+!**/src/config/data/
+!**/src/config/data/**
+
+!**/src/config/wandb/
+!**/src/config/wandb/**
