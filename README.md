@@ -9,22 +9,24 @@ Each project is **self-contained**, well-documented, and reproducible.
 ## Repository Structure
 ```
 ai-med-portfolio/
-│
 ├── projects/
-│ ├── ml/
-│ │ ├── diabetes-regression/
-│ │ ├── heart-failure-classification/
-│ │ └── breast-cancer-svm/
-│ │
-│ ├── dl/
-│ │ ├── llc-disease-mlp/
-│ │ ├── epigenetic-mark-cnn/
-│ │ ├── medical-image-classification/
-│ │ ├── medical-image-segmentation/
-│ │ ├──medical-notes-multilabel-classification/
-│ │ └── llm-project/
-│ 
-└── README.md ← You are here
+│   ├── ml/
+│   │   ├── diabetes-regression/
+│   │   ├── heart-failure-classification/
+│   │   └── breast-cancer-svm/
+│   └── dl/
+│       ├── imaging/
+│       │   ├── medical-image-classification/
+│       │   └── medical-image-segmentation/
+│       ├── genomics/
+│       │   └── epigenetic-mark-cnn/
+│       ├── tabular/
+│       │   └── llc-disease-mlp/
+│       ├── clinical-nlp/
+│       │   └── medical-notes-multilabel-classification/
+│       └── llm/
+│           └── llm-med-project/
+└── README.md
 ```
 ## Project Organization (Standard)
 
