@@ -17,7 +17,8 @@ ai-med-portfolio/
 │   └── dl/
 │       ├── imaging/
 │       │   ├── medical-image-classification/
-│       │   └── medical-image-segmentation/
+│       │   ├── medical-image-segmentation/
+│       │   └── medical-image-diffusion/
 │       ├── genomics/
 │       │   └── epigenetic-mark-cnn/
 │       ├── tabular/
@@ -79,7 +80,7 @@ project-name/
 
 ### Deep Learning (`projects/dl/`)
 
-**6 projects — structured data, genomics, medical imaging, NLP, LLM**
+**7 projects — structured data, genomics, medical imaging, NLP, LLM**
 
 - **LLC Disease MLP**
   - Classical MLP for medical tabular classification
@@ -96,6 +97,11 @@ project-name/
 - **Medical Image Segmentation**
   - U-Net-based architectures
   - Multi-label segmentation (Dice, IoU metrics)
+
+- **Medical Image Diffusion**
+  - Conditional DDPM with U-Net backbone for Chest X-ray generation
+  - Class-conditional image synthesis using pathology embeddings
+  - Training via noise prediction (MSE loss) and qualitative visual evaluation
 
 - **Medical Notes Multi-Label Classification**
   - Transformer-based model (ClinicalBERT)
@@ -114,10 +120,10 @@ project-name/
 - **Languages**: Python
 - **ML/DL**: PyTorch, PyTorch Lightning, scikit-learn
 - **NLP / LLM**: Hugging Face Transformers, LoRA, PEFT
-- **Medical Imaging**: segmentation-models-pytorch
+- **Medical Imaging**: segmentation-models-pytorch, diffusers
 - **Genomics**: Custom 1D CNNs
 - **Experiment Tracking**: Weights & Biases
-- **Evaluation**: Dice, IoU, ROC-AUC, F1, RMSE, Perplexity
+- **Evaluation**: Dice, IoU, ROC-AUC, F1, RMSE, Perplexity, MSE
 
 ---
 

@@ -1,0 +1,4 @@
+use: true
+project: diffusion
+log_model: false
+mode: online  #online

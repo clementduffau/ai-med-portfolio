@@ -1,0 +1,35 @@
+lr: 1e-4
+max_epochs : 30
+adam_beta1 : 0.9
+adam_beta2 : 0.999
+weight_decay : 1e-4
+dropout_rate: 0
+
+img_size: 256
+in_channels: 1   # Chest X-ray en grayscale (L)
+
+# Diffusion scheduler
+num_train_timesteps: 1000
+beta_schedule: squaredcos_cap_v2
+
+# UNet architecture (diffusers UNet2DModel)
+layers_per_block: 2
+block_out_channels:
+  - 64
+  - 128
+  - 256
+  - 256
+
+down_block_types:
+  - DownBlock2D
+  - DownBlock2D
+  - AttnDownBlock2D
+  - DownBlock2D
+
+up_block_types:
+  - UpBlock2D
+  - AttnUpBlock2D
+  - UpBlock2D
+  - UpBlock2D
+
+num_classes : 6

@@ -1,0 +1,20 @@
+
+labels:
+    - No Finding
+    - Atelectasis
+    - Cardiomegaly
+    - Effusion
+    - Pneumonia
+    - Pneumothorax
+
+img_size: 256
+img_mode : L
+
+batch_size_train: 16
+batch_size_val : 16
+num_workers: 2
+
+pin_memory: true
+persistent_workers: true
+
+processed_dir : /home/clement/mnt/ssd_nvme/ai-med-portfolio/projects/dl/imaging/medical-image-diffusion/data/processed
