@@ -25,8 +25,10 @@ ai-med-portfolio/
 │       │   └── llc-disease-mlp/
 │       ├── clinical-nlp/
 │       │   └── medical-notes-multilabel-classification/
-│       └── llm/
-│           └── llm-med-project/
+│       ├── llm/
+│       │   └── llm-med-project/
+│       └── multimodal/
+│           └── multimodal-med-project
 └── README.md
 ```
 ## Project Organization (Standard)
@@ -80,7 +82,7 @@ project-name/
 
 ### Deep Learning (`projects/dl/`)
 
-**7 projects — structured data, genomics, medical imaging, NLP, LLM**
+**8 projects — structured data, genomics, medical imaging, NLP, LLM, multimodal**
 
 - **LLC Disease MLP**
   - Classical MLP for medical tabular classification
@@ -113,6 +115,11 @@ project-name/
   - Medical paragraph summarization
   - Quantitative (loss, perplexity) & qualitative evaluation
 
+- **Multimodal Medical AI Project**
+  - Trained a **BLIP vision–language model** for medical image captioning
+  - Learned joint image–text representations on radiology data (ROCOv2)
+  - Implemented full training & evaluation pipeline (PyTorch Lightning)
+  - Assessed performance with **ROUGE-L** and qualitative inspection of generated captions
 ---
 
 ## Technical Stack

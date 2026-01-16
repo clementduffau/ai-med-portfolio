@@ -1,0 +1,14 @@
+
+model_name : Salesforce/blip-image-captioning-base
+
+max_length: 512
+
+
+batch_size_train: 8
+batch_size_val : 8
+num_workers: 2
+
+pin_memory: true
+persistent_workers: true
+
+data_dir : /home/clement/mnt/ssd_nvme/ai-med-portfolio/projects/dl/multimodal/multimodal-med-project/data/roco_v2
