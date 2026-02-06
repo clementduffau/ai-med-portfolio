@@ -1,0 +1,21 @@
+vocab_size: 32000
+
+# contexte max
+block_size: 1024
+
+# Taille du modèle (bon compromis ~120M params)
+n_layers: 12
+n_heads: 12
+d_model:  768
+d_ff: 3072  # 4*d_model
+
+dropout: 0.1
+bias: True
+tie_weights: True
+lr: 1e-4
+max_epochs : 10
+adam_beta1 : 0.9
+adam_beta2 : 0.999
+weight_decay : 1e-2
+warmup_ratio : 0.05
+

@@ -1,0 +1,23 @@
+
+tokens_dir: "data/tokens"
+
+# Longueur de contexte (T)
+block_size: 1024
+
+# Batch
+batch_size_train: 8
+batch_size_val: 8
+
+# Perf dataloader
+num_workers: 4
+persistent_workers: True
+
+# Taille “d’epoch” (dataset random windows)
+train_samples_per_epoch: 200000
+val_samples_per_epoch: 10000
+test_samples_per_epoch: 10000
+
+# Token dtype (vocab 32k => uint16)
+dtype: uint16
+
+seed: 42

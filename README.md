@@ -26,7 +26,8 @@ ai-med-portfolio/
 │       ├── clinical-nlp/
 │       │   └── medical-notes-multilabel-classification/
 │       ├── llm/
-│       │   └── llm-med-project/
+│       │   ├── llm-med-project/
+│       │   └── llm-med-from-scratch
 │       └── multimodal/
 │           └── multimodal-med-project
 └── README.md
@@ -82,7 +83,7 @@ project-name/
 
 ### Deep Learning (`projects/dl/`)
 
-**8 projects — structured data, genomics, medical imaging, NLP, LLM, multimodal**
+**9 projects — structured data, genomics, medical imaging, NLP, LLM, multimodal**
 
 - **LLC Disease MLP**
   - Classical MLP for medical tabular classification
@@ -115,6 +116,12 @@ project-name/
   - Medical paragraph summarization
   - Quantitative (loss, perplexity) & qualitative evaluation
 
+- **Medical LLM from Scratch**
+  - Training a **GPT-style Transformer from scratch** on PubMed biomedical text
+  - Custom **Byte-Level BPE tokenizer** and binary token pipeline
+  - Classical **Causal Language Modeling (CLM)** training
+  - Evaluation with **loss and perplexity** on train/validation/test sets
+  
 - **Multimodal Medical AI Project**
   - Trained a **BLIP vision–language model** for medical image captioning
   - Learned joint image–text representations on radiology data (ROCOv2)
