@@ -1,0 +1,25 @@
+[project]
+name = "llm-from-sratch"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.12.0",
+    "datasets>=4.5.0",
+    "ftfy>=6.3.1",
+    "hydra-core>=1.3.2",
+    "lxml>=6.0.2",
+    "numpy>=2.4.2",
+    "pytorch-lightning>=2.6.1",
+    "regex>=2026.1.15",
+    "rich>=14.3.2",
+    "safetensors>=0.7.0",
+    "sentencepiece>=0.2.1",
+    "tokenizers>=0.22.2",
+    "torch>=2.10.0",
+    "tqdm>=4.67.2",
+    "transformers>=5.0.0",
+    "unidecode>=1.4.0",
+    "wandb>=0.24.1",
+]
