@@ -27,9 +27,12 @@ ai-med-portfolio/
 │       │   └── medical-notes-multilabel-classification/
 │       ├── llm/
 │       │   ├── llm-med-project/
-│       │   └── llm-med-from-scratch
-│       └── multimodal/
-│           └── multimodal-med-project
+│       │   └── llm-med-from-scratch/
+│       ├── multimodal/
+│       │   └── multimodal-med-project
+│       └── agent/ 
+│           ├── ai-receptionist/
+│           └── rag-agent/  
 └── README.md
 ```
 ## Project Organization (Standard)
@@ -83,7 +86,7 @@ project-name/
 
 ### Deep Learning (`projects/dl/`)
 
-**9 projects — structured data, genomics, medical imaging, NLP, LLM, multimodal**
+**11 projects — structured data, genomics, medical imaging, NLP, LLM, multimodal**
 
 - **LLC Disease MLP**
   - Classical MLP for medical tabular classification
@@ -127,6 +130,18 @@ project-name/
   - Learned joint image–text representations on radiology data (ROCOv2)
   - Implemented full training & evaluation pipeline (PyTorch Lightning)
   - Assessed performance with **ROUGE-L** and qualitative inspection of generated captions
+
+- **Medical RAG Agent**
+  - Retrieval-Augmented Generation agent built with LangGraph and Ollama
+  - Local semantic search over scientific PDFs using Chroma vector database
+  - Tool-based document retrieval with grounded answers and source citation
+  - Designed for reliable question answering on genomics and medical literature
+
+- **AI Receptionist Agent**
+  - Conversational AI agent built with LangGraph and Ollama for handling appointment requests and basic inquiries.
+  - State-machine orchestration with intent detection and structured information extraction.
+  - Tool-based actions for booking appointments, answering FAQs, and taking messages.
+  - Designed as a minimal production-style prototype for reliable conversational AI.
 ---
 
 ## Technical Stack
@@ -135,6 +150,7 @@ project-name/
 - **ML/DL**: PyTorch, PyTorch Lightning, scikit-learn
 - **NLP / LLM**: Hugging Face Transformers, LoRA, PEFT
 - **Medical Imaging**: segmentation-models-pytorch, diffusers
+- **Langchain / Langgraph / RAG*** : LangChain, LangGraph, ChromaDB, Ollama
 - **Genomics**: Custom 1D CNNs
 - **Experiment Tracking**: Weights & Biases
 - **Evaluation**: Dice, IoU, ROC-AUC, F1, RMSE, Perplexity, MSE
