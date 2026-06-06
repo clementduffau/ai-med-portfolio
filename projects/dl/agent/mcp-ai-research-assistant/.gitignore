@@ -1,0 +1,67 @@
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.coverage.*
+coverage.xml
+
+# Ruff / mypy / type checking
+.ruff_cache/
+.mypy_cache/
+.pyright/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / editors
+.vscode/
+.idea/
+
+# Docker / local runtime files
+*.pid
+*.sock
+
+# Local data / uploaded test files
+data/
+uploads/
+tmp/
+temp/
+
+# Hugging Face / model caches if created locally
+.cache/
+huggingface_cache/
+
+# Qdrant local storage if created in project folder
+qdrant_data/
+storage/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+.txt
+.pdf
